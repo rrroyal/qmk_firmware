@@ -9,7 +9,7 @@
 //#define PRODUCT_ID 0x5678
 //#define DEVICE_VER 0x0100
 //#define MANUFACTURER "DZTech"
-#define PRODUCT "royal65"
+#define PRODUCT "dddddddddddd"
 
 // Macros
 #define DYNAMIC_MACRO_NO_NESTING

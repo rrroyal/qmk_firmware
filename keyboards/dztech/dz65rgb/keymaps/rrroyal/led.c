@@ -52,7 +52,7 @@ void handle_indicator_caps_lock(void) {
 
 static int8_t dynamic_macro_state = 0;
 
-void dynamic_macro_record_start_user(void) {
+void dynamic_macro_record_start_user(int8_t direction) {
     rgb_matrix_set_color(INDICATOR_DYNAMIC_MACRO, RGB_RED);
     dynamic_macro_state = 1;
 }
