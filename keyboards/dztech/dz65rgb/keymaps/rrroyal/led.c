@@ -114,7 +114,25 @@ void handle_indicator_layer(uint8_t led_min, uint8_t led_max) {
 
 // MARK: - rgb_matrix_indicators_kb
 
-bool rgb_matrix_indicators_user(void) {
+// bool rgb_matrix_indicators_kb(void) {
+//     #ifdef INDICATOR_SCROLL_LOCK
+//     handle_indicator_scroll_lock();
+// 	#endif
+//
+// 	#ifdef INDICATOR_CAPS_LOCK
+//     handle_indicator_caps_lock();
+// 	#endif
+//
+//     #ifdef INDICATOR_DYNAMIC_MACRO
+//     handle_indicator_dynamic_macro();
+//     #endif
+//
+//     return false;
+// }
+
+// MARK: - rgb_matrix_indicators_advanced_user
+
+bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     #ifdef INDICATOR_SCROLL_LOCK
     handle_indicator_scroll_lock();
 	#endif
@@ -127,12 +145,6 @@ bool rgb_matrix_indicators_user(void) {
     handle_indicator_dynamic_macro();
     #endif
 
-    return false;
-}
-
-// MARK: - rgb_matrix_indicators_advanced_user
-
-bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
     #ifdef INDICATOR_LAYER
     handle_indicator_layer(led_min, led_max);
     #endif

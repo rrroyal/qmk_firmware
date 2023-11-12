@@ -9,7 +9,7 @@
 //#define PRODUCT_ID 0x5678
 //#define DEVICE_VER 0x0100
 //#define MANUFACTURER "DZTech"
-#define PRODUCT "dddddddddddd"
+#define PRODUCT "tofu65"
 
 // Macros
 #define DYNAMIC_MACRO_NO_NESTING
@@ -64,9 +64,9 @@
 #undef	ENABLE_RGB_MATRIX_HUE_BREATHING				// Hue shifts up a slight ammount at the same time, then shifts back
 #undef	ENABLE_RGB_MATRIX_HUE_PENDULUM				// Hue shifts up a slight ammount in a wave to the right, then back to the left
 #undef	ENABLE_RGB_MATRIX_HUE_WAVE					// Hue shifts up a slight ammount and then back down in a wave to the right
-#define	ENABLE_RGB_MATRIX_PIXEL_RAIN				// Randomly light keys with random hues
-#define	ENABLE_RGB_MATRIX_PIXEL_FLOW				// ?
 #define	ENABLE_RGB_MATRIX_PIXEL_FRACTAL				// Single hue fractal filled keys pulsing horizontally out to edges
+#define	ENABLE_RGB_MATRIX_PIXEL_FLOW				// Pulsing RGB flow along LED wiring with random hues
+#define	ENABLE_RGB_MATRIX_PIXEL_RAIN				// Randomly light keys with random hues
 
 #if defined(RGB_MATRIX_FRAMEBUFFER_EFFECTS)
 	#define	ENABLE_RGB_MATRIX_TYPING_HEATMAP	// How hot is your WPM!
