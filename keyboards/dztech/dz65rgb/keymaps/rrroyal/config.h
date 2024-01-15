@@ -9,7 +9,7 @@
 //#define PRODUCT_ID 0x5678
 //#define DEVICE_VER 0x0100
 //#define MANUFACTURER "DZTech"
-#define PRODUCT "tofu65"
+#define PRODUCT "TOFU65"
 
 // Macros
 #define DYNAMIC_MACRO_NO_NESTING
