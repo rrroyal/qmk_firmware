@@ -1,6 +1,7 @@
 #pragma once
 
-// Device name
+// Device identification
+
 #ifdef PRODUCT
 	#undef PRODUCT
 #endif
@@ -10,6 +11,13 @@
 //#define DEVICE_VER 0x0100
 //#define MANUFACTURER "DZTech"
 #define PRODUCT "TOFU65"
+
+// Disable stuff that's not needed
+#define NO_ACTION_ONESHOT
+#define NO_ACTION_TAPPING
+#define NO_MUSIC_MODE
+
+#define LAYER_STATE_8BIT
 
 // Macros
 #define DYNAMIC_MACRO_NO_NESTING
