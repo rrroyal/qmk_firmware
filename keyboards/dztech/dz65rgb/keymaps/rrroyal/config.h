@@ -43,6 +43,7 @@
 #undef	RGB_MATRIX_KEYRELEASES
 #define	RGB_MATRIX_KEYPRESSES
 
+#define RGB_MATRIX_DISABLE_SHARED_KEYCODES
 
 // Enable/disable RGB modes
 #define ENABLE_RGB_MATRIX_SOLID_COLOR				// Static single hue, no speed support
@@ -67,6 +68,7 @@
 #undef	ENABLE_RGB_MATRIX_DUAL_BEACON				// Full gradient spinning around center of keyboard
 #undef	ENABLE_RGB_MATRIX_RAINBOW_BEACON			// Full tighter gradient spinning around center of keyboard
 #undef	ENABLE_RGB_MATRIX_RAINBOW_PINWHEELS			// Full dual gradients spinning two halfs of keyboard
+#define ENABLE_RGB_MATRIX_FLOWER_BLOOMING			// ?
 #define	ENABLE_RGB_MATRIX_RAINDROPS					// Randomly changes a single key's hue
 #define	ENABLE_RGB_MATRIX_JELLYBEAN_RAINDROPS		// Randomly changes a single key's hue and saturation
 #undef	ENABLE_RGB_MATRIX_HUE_BREATHING				// Hue shifts up a slight ammount at the same time, then shifts back
@@ -75,11 +77,16 @@
 #define	ENABLE_RGB_MATRIX_PIXEL_FRACTAL				// Single hue fractal filled keys pulsing horizontally out to edges
 #define	ENABLE_RGB_MATRIX_PIXEL_FLOW				// Pulsing RGB flow along LED wiring with random hues
 #define	ENABLE_RGB_MATRIX_PIXEL_RAIN				// Randomly light keys with random hues
+#define ENABLE_RGB_MATRIX_STARLIGHT					// ?
+#define ENABLE_RGB_MATRIX_STARLIGHT_SMOOTH			// ?
+#define ENABLE_RGB_MATRIX_STARLIGHT_DUAL_HUE		// ?
+#define ENABLE_RGB_MATRIX_STARLIGHT_DUAL_SAT		// ?
+#define ENABLE_RGB_MATRIX_RIVERFLOW					// ?
 
 #if defined(RGB_MATRIX_FRAMEBUFFER_EFFECTS)
-	#define	ENABLE_RGB_MATRIX_TYPING_HEATMAP	// How hot is your WPM!
-	#undef	ENABLE_RGB_MATRIX_DIGITAL_RAIN		// That famous computer simulation
-    #define	ENABLE_RGB_MATRIX_CUSTOM_DIGITAL_RAIN_HUE  // !
+	#define	ENABLE_RGB_MATRIX_TYPING_HEATMAP			// How hot is your WPM!
+	#undef	ENABLE_RGB_MATRIX_DIGITAL_RAIN				// That famous computer simulation
+    #define	ENABLE_RGB_MATRIX_CUSTOM_DIGITAL_RAIN_HUE 	// !
 #endif
 
 #if defined(RGB_MATRIX_KEYPRESSES) || defined(RGB_MATRIX_KEYRELEASES)
